@@ -1,7 +1,50 @@
+# beddit
+
+## connect
+
+```shell
+$ bluetoothctl power on
+$ bluetoothctl piarable on
+$ bluetoothctl pair ${beddit_mac}
+$ bluetoothctl trust ${beddit_mac}
+
+$ bluetoothctl connect ${beddit_mac}
+Attempting to connect to EA:26:7D:4A:ED:E4
+[CHG] Device EA:26:7D:4A:ED:E4 Connected: yes
+[CHG] Device EA:26:7D:4A:ED:E4 Connected: no
+Connection successful
+[CHG] Device EA:26:7D:4A:ED:E4 Connected: yes
+[CHG] Device EA:26:7D:4A:ED:E4 Connected: no
+[CHG] Device EA:26:7D:4A:ED:E4 Paired: yes
+
+$ bluetoothctl devices
+Device EA:26:7D:4A:ED:E4 Beddit 2564
+$ bluetoothctl paired-devices
+Device EA:26:7D:4A:ED:E4 Beddit 2564
+
+$ bluetoothctl info ${beddit_mac}
+Device EA:26:7D:4A:ED:E4 (random)
+        Name: Beddit 2564
+        Alias: Beddit 2564
+        Appearance: 0x03c0
+        Paired: yes
+        Trusted: yes
+        Blocked: no
+        Connected: no
+        LegacyPairing: no
+        UUID: Generic Access Profile    (00001800-0000-1000-8000-00805f9b34fb)
+        UUID: Generic Attribute Profile (00001801-0000-1000-8000-00805f9b34fb)
+        UUID: Device Information        (0000180a-0000-1000-8000-00805f9b34fb)
+        UUID: Environmental Sensing     (0000181a-0000-1000-8000-00805f9b34fb)
+        UUID: Vendor specific           (e6807d20-b90a-11e5-a837-0800200c9a66)
+
+
+```
+
 # beddit-python-bt
 Python library for reading raw data from Beddit Bluetooth 2 device
 
-# Specifications for Bluetooth 2 sensor protocol
+## Specifications for Bluetooth 2 sensor protocol
 
 The sensor has two states: Command and Streaming. Both states have a few
 commands for performing appropriate tasks. The commands are plain text in
