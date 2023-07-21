@@ -66,38 +66,22 @@ dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
-name = "pybluez"
+name = "PyBluez"
 version = "0.23"
-description = "Bluetooth Python extension module"
+description = ""
 category = "main"
 optional = false
 python-versions = "*"
-
-[package.dependencies]
-pyobjc-core = ">=3.1,<6"
-pyobjc-framework-Cocoa = ">=3.1,<6"
+develop = false
 
 [package.extras]
 ble = ["gattlib (==0.20150805)"]
 
-[[package]]
-name = "pyobjc-core"
-version = "5.3"
-description = "Python<->ObjC Interoperability Module"
-category = "main"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "pyobjc-framework-cocoa"
-version = "5.3"
-description = "Wrappers for the Cocoa frameworks on macOS"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-pyobjc-core = ">=5.3"
+[package.source]
+type = "git"
+url = "https://github.com/pybluez/pybluez"
+reference = "0.23"
+resolved_reference = "0998c40ebad69b3c8e2b3e90f1fd0c0879ce6a57"
 
 [[package]]
 name = "pytest"
@@ -150,7 +134,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-co
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "5dea665b11dc492988b815818279e8aa24c9e7fbcd91525a1e46109651dec9b2"
+content-hash = "0d3e83aba22ab2e466d769b8face627b603933c07b14cbf765372df91c28dd8d"
 
 [metadata.files]
 colorama = []
@@ -159,9 +143,7 @@ importlib-metadata = []
 iniconfig = []
 packaging = []
 pluggy = []
-pybluez = []
-pyobjc-core = []
-pyobjc-framework-cocoa = []
+PyBluez = []
 pytest = []
 tomli = []
 typing-extensions = []

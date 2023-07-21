@@ -1,5 +1,11 @@
 # beddit
 
+## dependencies
+
+```shell
+apt-get install libbluetooth-dev
+```
+
 ## connect
 
 ```shell
