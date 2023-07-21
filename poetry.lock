@@ -107,7 +107,7 @@ testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "no
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -134,7 +134,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-co
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "0d3e83aba22ab2e466d769b8face627b603933c07b14cbf765372df91c28dd8d"
+content-hash = "a276dbf1652fde02b771ca47daf2f44d73655a67ca2a0131fb5181da7a0d1b7f"
 
 [metadata.files]
 colorama = []

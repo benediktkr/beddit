@@ -1,0 +1,10 @@
+config.py
+*~
+*.pyc
+dist/
+build/
+MANIFEST
+sudoisbot.egg-info/
+.#*
+\#*
+sudoisbot.yml

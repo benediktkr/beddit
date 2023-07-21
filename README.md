@@ -45,7 +45,12 @@ Device EA:26:7D:4A:ED:E4 (random)
         UUID: Vendor specific           (e6807d20-b90a-11e5-a837-0800200c9a66)
 
 
+
+$ bluetoothctl agent on
+
 ```
+
+maybe `bluetooth.service` needs to be running, or is the agent?
 
 # beddit-python-bt
 Python library for reading raw data from Beddit Bluetooth 2 device

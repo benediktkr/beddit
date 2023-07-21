@@ -1,6 +1,6 @@
-import tomllib
+import tomli
 
 
 def read_config(path="beddit.toml"):
     with open(path, 'r') as f:
-        return tomllib.load(f)
+        return tomli.loads(f.read())
