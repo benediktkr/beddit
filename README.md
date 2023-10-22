@@ -1,5 +1,11 @@
 # beddit
 
+## BLE
+
+Reverse engineering the BLE protocol: https://medium.com/inmoodforlife/beddit-reverse-engineering-c4bdca8e07b8
+
+ The code in the repo this repo was forked from is for an older version of the Beddit that uses RFCOMM serial over Bluetooth. Mine probably doesnt use RFCOMM, as it seems to use BLE.
+
 ## dependencies
 
 ```shell
